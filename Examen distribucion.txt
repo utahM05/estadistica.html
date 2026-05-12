@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+    let error = z * Math.sqrt((p * (1 - p)) / n);
+
+    let li = p - error;
+    let ls = p + error;
+
+    document.getElementById("resultado3").innerHTML = `
+        <p><strong>Proporción muestral:</strong> ${p.toFixed(3)}</p>
+        <p><strong>Intervalo de confianza 95%:</strong></p>
+        <p>[ ${li.toFixed(3)} , ${ls.toFixed(3)} ]</p>
+        <p>Con un 95% de confianza, la verdadera proporción poblacional se encuentra dentro de ese intervalo.</p>
+    `;
+}
+
+</script>
+
+
+
+    <div class="card">
+        <h2>Tabla Z (valores más usados)</h2>
+
+        <table border="1" cellpadding="10" style="border-collapse: collapse; width: 100%; color:white;">
+            <tr>
+                <th>Confianza</th>
+                <th>Valor Z</th>
+            </tr>
+            <tr>
+                <td>90%</td>
+                <td>1.645</td>
+            </tr>
+            <tr>
+                <td>95%</td>
+                <td>1.96</td>
+            </tr>
+            <tr>
+                <td>99%</td>
+                <td>2.576</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="card">
+        <h2>Tabla t-Student (α = 0.05)</h2>
+
+        <table border="1" cellpadding="10" style="border-collapse: collapse; width: 100%; color:white;">
+            <tr>
+                <th>Grados de libertad</th>
+                <th>Valor t crítico</th>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>2.015</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>1.812</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>1.753</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>1.740</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>1.725</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>1.697</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
